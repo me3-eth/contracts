@@ -10,8 +10,8 @@
 
 1. Clone project and switch to _contracts_
     ```sh
-    git clone https://github.com/0xcharchar/ethonline2021.git
-    cd ethonline2021/contracts
+    git clone https://github.com/me3-eth/contracts.git me3-eth-contracts
+    cd me3-eth-contracts
     ```
 2. Optional: set node version with NVM
     ```sh
