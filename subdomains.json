@@ -1,0 +1,13 @@
+{
+  "preregister": [
+    "blog",
+    "charchar",
+    "brendan"
+  ],
+  
+  "reserve": [
+    "dev",
+    "admin",
+    "administrator"
+  ]
+}
