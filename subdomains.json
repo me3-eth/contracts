@@ -8,6 +8,22 @@
   "reserve": [
     "dev",
     "admin",
-    "administrator"
+    "administrator",
+    "news",
+    "press",
+    "me3",
+    "www",
+    "http",
+    "https",
+    "mod",
+    "moderator",
+    "dao",
+    "mail",
+    "shop",
+    "m",
+    "forums",
+    "forum",
+    "wiki",
+    "community"
   ]
 }
