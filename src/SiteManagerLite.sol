@@ -1,7 +1,7 @@
 //SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.8.0;
 
-import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/access/Ownable.sol";
 import "@ensdomains/ens-contracts/contracts/resolvers/PublicResolver.sol";
 import "@ensdomains/ens-contracts/contracts/registry/ENS.sol";
 
@@ -16,23 +16,13 @@ contract SiteManagerLite is Ownable {
   // Resolver to use when creating subdomains
   PublicResolver public s_defaultResolver;
 
-  // Reserved subdomains and who they are reserved for
-  mapping(bytes32 => address) public s_reservations;
-
   // Indicate when a new subdomain is registered, what it is, and by whom
   event SubdomainRegistered (address owner, bytes32 indexed label);
 
-  constructor(ENS _registryAddr, PublicResolver _resolverAddr, bytes32 _manageNode, bytes32[] reserve) {
+  constructor(ENS _registryAddr, PublicResolver _resolverAddr, bytes32 _manageNode) {
     s_ens = _registryAddr;
     s_defaultResolver = _resolverAddr;
     s_manageNode = _manageNode;
-
-    // set reservations
-    mapping(bytes32 => address) reservations;
-    for(uint idx = 0; idx < reserve.length; idx++) {
-      reservations[reserve[idx]] = msg.sender;
-    }
-    s_reservations = reservations;
   }
 
   function setDefaultResolver (PublicResolver resolver) external onlyOwner {
