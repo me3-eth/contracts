@@ -1,9 +1,9 @@
 //SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.8.0;
 
-import "@openzeppelin/access/Ownable.sol";
-import "@ensdomains/ens-contracts/contracts/resolvers/PublicResolver.sol";
-import "@ensdomains/ens-contracts/contracts/registry/ENS.sol";
+import "openzeppelin-contracts/access/Ownable.sol";
+import "ens-contracts/resolvers/PublicResolver.sol";
+import "ens-contracts/registry/ENS.sol";
 
 contract SiteManagerLite is Ownable {
   // Reference to a registry that matches the ENS interface

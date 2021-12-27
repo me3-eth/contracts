@@ -14,7 +14,7 @@
   "scripts": {
     "gas": "OPTIMIZER_ENABLED=1 REPORT_GAS_ENABLED=1 npx hardhat test",
     "integration": "npx hardhat test",
-    "test": "forge test --lib-paths node_modules --force"
+    "test": "forge test --force"
   },
   "dependencies": {
     "@ensdomains/ens-contracts": "^0.0.7",
