@@ -19,6 +19,7 @@ contract Reservations is Ownable {
     s_reservations["community"] = contractOwner;
     s_reservations["dao"] = contractOwner;
     s_reservations["dev"] = contractOwner;
+    s_reservations["ens"] = contractOwner;
     s_reservations["forum"] = contractOwner;
     s_reservations["forums"] = contractOwner;
     s_reservations["http"] = contractOwner;
